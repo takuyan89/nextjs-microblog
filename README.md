@@ -2,7 +2,8 @@
 
 これは [Next.js](https://nextjs.org/) を使って構築されたシンプルなマイクロブログプラットフォームです。
 
-![Uploading スクリーンショット 2024-08-07 10.37.27.png…]()
+<img width="1440" alt="スクリーンショット 2024-08-07 10 37 27" src="https://github.com/user-attachments/assets/7bd1f4dd-eb37-40fc-84f1-c43c29aa0a09">
+
 
 
 ## 機能
