@@ -24,9 +24,7 @@ export default function Home({ allPostsData }) {
                 <title>{siteTitle}</title>
             </Head>
             <section className={utilStyles.headingMd}>
-                <p>
-                    aaaaaaaaaaaaabbbbbbbbbbbbbccccccccccccccccccccccddddddddddddddddddeeeeeeeeeeeeg
-                </p>
+                <p>Test Blog</p>
             </section>
 
             <section>
