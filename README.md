@@ -1,40 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js マイクロブログ
 
-## Getting Started
+これは [Next.js](https://nextjs.org/) を使って構築されたシンプルなマイクロブログプラットフォームです。
 
-First, run the development server:
+![Uploading スクリーンショット 2024-08-07 10.37.27.png…]()
 
-```bash
+
+## 機能
+
+- **Markdown サポート**: Markdown でブログ記事を作成可能。
+- **SEO フレンドリー**: サーバーサイドレンダリングによる SEO 最適化。
+- **静的生成**: 静的生成による高速なパフォーマンス。
+- **簡単なカスタマイズ**: シンプルな構造と依存関係により、簡単にカスタマイズ可能。
+
+## 使用技術
+
+- [Next.js](https://nextjs.org/) 14.1.2
+- [React](https://reactjs.org/) ^18
+- [gray-matter](https://github.com/jonschlinkert/gray-matter) ^4.0.3 (フロントマターの解析用)
+- [remark](https://github.com/remarkjs/remark) ^15.0.1 (Markdown 処理用)
+- [remark-html](https://github.com/remarkjs/remark-html) ^16.0.1 (Markdown を HTML に変換)
+
+## はじめに
+
+### 前提条件
+
+以下のソフトウェアがインストールされていることを確認してください:
+
+- Node.js (>= 14.x)
+- npm (>= 6.x)
+
+### インストール
+
+1. リポジトリをクローンします:
+
+   ```bash
+   git clone https://github.com/your-username/nextjs-microblog.git
+   cd nextjs-microblog
+
+
+
+npm install
+
+開発サーバーの起動
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+新しいブログ記事の作成
+posts ディレクトリに新しい .md ファイルを作成します。
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Markdown を使って内容を記述し、上部にフロントマターを追加します:
 
-## Deploy on Vercel
+markdown
+コードをコピーする
+---
+title: "記事のタイトル"
+date: "2024-08-07"
+description: "記事の簡単な説明"
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 記事の内容
